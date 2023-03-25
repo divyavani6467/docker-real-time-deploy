@@ -1,21 +1,20 @@
 ---
 version: "3"
 services: 
-web:
   movies:
     image: divya6467/phonepaymovies
     ports:
       - 8000:80
     deploy:
       replicas: 3
-  web2: 
+  
   train:
     image: divya6467/phonepaytrains
     ports:
       - 8001:80
     deploy:
       replicas: 3
-  web3: 
+  
   recharge:
     image: divya6467/phonepayrecharges
     ports:
