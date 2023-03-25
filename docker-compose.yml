@@ -6,19 +6,19 @@ services:
     ports:
       - 8000:80
     deploy:
-      replicas: 3
+      replicas: 1
     
   train:
     image: divya6467/phonepaytrains 
     ports:
       - 8001:80
     deploy:
-      replicas: 3
+      replicas: 1
     
   recharge:
     image: divya6467/phonepayrecharges
     ports:
       - 8002:80
     deploy:
-      replicas: 3
+      replicas: 1
     
